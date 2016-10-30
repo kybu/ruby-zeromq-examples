@@ -15,10 +15,9 @@
   <graph edgedefault="directed" id="G">
     <data key="d0"/>
     <node id="n0">
-      <data key="d5"/>
       <data key="d6">
         <y:GenericNode configuration="ShinyPlateNode2">
-          <y:Geometry height="243.0" width="203.0" x="167.5" y="456.0"/>
+          <y:Geometry height="243.0" width="203.0" x="351.5" y="461.0"/>
           <y:Fill color="#FF9900" transparent="false"/>
           <y:BorderStyle hasColor="false" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="110.69921875" x="13.895110625000598" y="205.91305813590066">Process DB records<y:LabelModel>
@@ -35,10 +34,9 @@ between them.</y:NodeLabel>
       </data>
     </node>
     <node id="n1">
-      <data key="d5"/>
       <data key="d6">
         <y:GenericNode configuration="ShinyPlateNode2">
-          <y:Geometry height="55.0" width="96.0" x="167.5" y="456.0"/>
+          <y:Geometry height="55.0" width="96.0" x="351.5" y="461.0"/>
           <y:Fill color="#48BC00" transparent="false"/>
           <y:BorderStyle hasColor="false" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="34.017578125" x="30.9912109375" y="18.1494140625">PULL<y:LabelModel>
@@ -52,10 +50,9 @@ between them.</y:NodeLabel>
       </data>
     </node>
     <node id="n2">
-      <data key="d5"/>
       <data key="d6">
         <y:GenericNode configuration="ShinyPlateNode2">
-          <y:Geometry height="55.0" width="96.0" x="273.5" y="456.0"/>
+          <y:Geometry height="55.0" width="96.0" x="457.5" y="461.0"/>
           <y:Fill color="#48BC00" transparent="false"/>
           <y:BorderStyle hasColor="false" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="37.33984375" x="29.330078125" y="18.1494140625">PUSH<y:LabelModel>
@@ -69,10 +66,9 @@ between them.</y:NodeLabel>
       </data>
     </node>
     <node id="n3">
-      <data key="d5"/>
       <data key="d6">
         <y:GenericNode configuration="ShinyPlateNode2">
-          <y:Geometry height="258.0" width="203.0" x="167.5" y="90.0"/>
+          <y:Geometry height="258.0" width="203.0" x="351.5" y="95.0"/>
           <y:Fill color="#FF9900" transparent="false"/>
           <y:BorderStyle hasColor="false" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="58.69140625" x="24.154296875" y="31.79172305610237">DB reader<y:LabelModel>
@@ -82,14 +78,23 @@ between them.</y:NodeLabel>
               <y:SmartNodeLabelModelParameter labelRatioX="-0.5" labelRatioY="-0.5" nodeRatioX="-0.3810133158866995" nodeRatioY="-0.37677626722440943" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
             </y:ModelParameter>
           </y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="62.8046875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="204.671875" x="-0.8359375" y="-66.8046875">Only one instance runs.
+Fetching records from a database
+and pushing them using ZeroMQ is
+quite often not a bottleneck.<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.5" nodeRatioX="0.0" nodeRatioY="-0.5" offsetX="0.0" offsetY="-4.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
         </y:GenericNode>
       </data>
     </node>
     <node id="n4">
-      <data key="d5"/>
       <data key="d6">
         <y:GenericNode configuration="ShinyPlateNode2">
-          <y:Geometry height="55.0" width="96.0" x="167.5" y="293.0"/>
+          <y:Geometry height="55.0" width="96.0" x="351.5" y="298.0"/>
           <y:Fill color="#48BC00" transparent="false"/>
           <y:BorderStyle hasColor="false" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="37.33984375" x="29.330078125" y="18.1494140625">PUSH<y:LabelModel>
@@ -103,10 +108,9 @@ between them.</y:NodeLabel>
       </data>
     </node>
     <node id="n5">
-      <data key="d5"/>
       <data key="d6">
         <y:GenericNode configuration="ShinyPlateNode2">
-          <y:Geometry height="55.0" width="96.0" x="273.5" y="293.0"/>
+          <y:Geometry height="55.0" width="96.0" x="457.5" y="298.0"/>
           <y:Fill color="#48BC00" transparent="false"/>
           <y:BorderStyle hasColor="false" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="34.017578125" x="30.9912109375" y="18.1494140625">PULL<y:LabelModel>
@@ -120,10 +124,9 @@ between them.</y:NodeLabel>
       </data>
     </node>
     <node id="n6">
-      <data key="d5"/>
       <data key="d6">
         <y:GenericNode configuration="ShinyPlateNode2">
-          <y:Geometry height="55.0" width="96.0" x="273.5" y="196.0"/>
+          <y:Geometry height="55.0" width="96.0" x="457.5" y="201.0"/>
           <y:Fill color="#48BC00" transparent="false"/>
           <y:BorderStyle hasColor="false" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="30.00390625" x="32.998046875" y="18.1494140625">REQ<y:LabelModel>
@@ -137,10 +140,9 @@ between them.</y:NodeLabel>
       </data>
     </node>
     <node id="n7">
-      <data key="d5"/>
       <data key="d6">
         <y:GenericNode configuration="ShinyPlateNode2">
-          <y:Geometry height="55.0" width="96.0" x="273.5" y="130.0"/>
+          <y:Geometry height="55.0" width="96.0" x="457.5" y="135.0"/>
           <y:Fill color="#48BC00" transparent="false"/>
           <y:BorderStyle hasColor="false" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="28.673828125" x="33.6630859375" y="18.1494140625">PUB<y:LabelModel>
@@ -154,10 +156,9 @@ between them.</y:NodeLabel>
       </data>
     </node>
     <node id="n8">
-      <data key="d5"/>
       <data key="d6">
         <y:GenericNode configuration="ShinyPlateNode2">
-          <y:Geometry height="55.0" width="96.0" x="273.5" y="597.25"/>
+          <y:Geometry height="55.0" width="96.0" x="457.5" y="602.25"/>
           <y:Fill color="#48BC00" transparent="false"/>
           <y:BorderStyle hasColor="false" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="30.00390625" x="32.998046875" y="18.1494140625">REQ<y:LabelModel>
@@ -171,10 +172,9 @@ between them.</y:NodeLabel>
       </data>
     </node>
     <node id="n9">
-      <data key="d5"/>
       <data key="d6">
         <y:GenericNode configuration="ShinyPlateNode2">
-          <y:Geometry height="55.0" width="96.0" x="273.5" y="533.25"/>
+          <y:Geometry height="55.0" width="96.0" x="457.5" y="538.25"/>
           <y:Fill color="#48BC00" transparent="false"/>
           <y:BorderStyle hasColor="false" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="28.673828125" x="33.6630859375" y="18.1494140625">PUB<y:LabelModel>
@@ -188,10 +188,9 @@ between them.</y:NodeLabel>
       </data>
     </node>
     <node id="n10">
-      <data key="d5"/>
       <data key="d6">
         <y:GenericNode configuration="ShinyPlateNode2">
-          <y:Geometry height="164.75" width="203.0" x="559.25" y="316.875"/>
+          <y:Geometry height="164.75" width="203.0" x="743.25" y="321.875"/>
           <y:Fill color="#FF9900" transparent="false"/>
           <y:BorderStyle hasColor="false" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="41.365234375" x="142.9751887500006" y="20.301109974778512">Logger<y:LabelModel>
@@ -205,10 +204,9 @@ between them.</y:NodeLabel>
       </data>
     </node>
     <node id="n11">
-      <data key="d5"/>
       <data key="d6">
         <y:GenericNode configuration="ShinyPlateNode2">
-          <y:Geometry height="55.0" width="96.0" x="559.25" y="406.0"/>
+          <y:Geometry height="55.0" width="96.0" x="743.25" y="411.0"/>
           <y:Fill color="#48BC00" transparent="false"/>
           <y:BorderStyle hasColor="false" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="36.677734375" x="29.6611328125" y="18.1494140625">RESP<y:LabelModel>
@@ -222,10 +220,9 @@ between them.</y:NodeLabel>
       </data>
     </node>
     <node id="n12">
-      <data key="d5"/>
       <data key="d6">
         <y:GenericNode configuration="ShinyPlateNode2">
-          <y:Geometry height="55.0" width="96.0" x="559.25" y="337.5"/>
+          <y:Geometry height="55.0" width="96.0" x="743.25" y="342.5"/>
           <y:Fill color="#48BC00" transparent="false"/>
           <y:BorderStyle hasColor="false" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="28.673828125" x="33.6630859375" y="18.1494140625">SUB<y:LabelModel>
@@ -238,8 +235,24 @@ between them.</y:NodeLabel>
         </y:GenericNode>
       </data>
     </node>
+    <node id="n13">
+      <data key="d5"/>
+      <data key="d6">
+        <y:GenericNode configuration="ShinyPlateNode2">
+          <y:Geometry height="104.5" width="105.0" x="216.5" y="151.5"/>
+          <y:Fill color="#008BFF" transparent="false"/>
+          <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="55.369140625" x="24.8154296875" y="42.8994140625">Database<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+        </y:GenericNode>
+      </data>
+    </node>
     <edge id="e0" source="n2" target="n0">
-      <data key="d9"/>
       <data key="d10">
         <y:BezierEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -249,7 +262,6 @@ between them.</y:NodeLabel>
       </data>
     </edge>
     <edge id="e1" source="n2" target="n0">
-      <data key="d9"/>
       <data key="d10">
         <y:BezierEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -259,7 +271,6 @@ between them.</y:NodeLabel>
       </data>
     </edge>
     <edge id="e2" source="n4" target="n1">
-      <data key="d9"/>
       <data key="d10">
         <y:BezierEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -278,7 +289,6 @@ to be processed<y:LabelModel>
       </data>
     </edge>
     <edge id="e3" source="n2" target="n5">
-      <data key="d9"/>
       <data key="d10">
         <y:BezierEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -293,11 +303,10 @@ which were processed successfully<y:PreferredPlacementDescriptor angle="0.0" ang
       </data>
     </edge>
     <edge id="e4" source="n7" target="n12">
-      <data key="d9"/>
       <data key="d10">
         <y:BezierEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
-            <y:Point x="581.4947200000006" y="246.62871999999948"/>
+            <y:Point x="765.4947200000006" y="251.62871999999948"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -305,11 +314,10 @@ which were processed successfully<y:PreferredPlacementDescriptor angle="0.0" ang
       </data>
     </edge>
     <edge id="e5" source="n6" target="n11">
-      <data key="d9"/>
       <data key="d10">
         <y:BezierEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
-            <y:Point x="580.9947200000006" y="298.3787199999995"/>
+            <y:Point x="764.9947200000006" y="303.3787199999995"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -317,11 +325,10 @@ which were processed successfully<y:PreferredPlacementDescriptor angle="0.0" ang
       </data>
     </edge>
     <edge id="e6" source="n8" target="n10">
-      <data key="d9"/>
       <data key="d10">
         <y:BezierEdge>
           <y:Path sx="0.0" sy="0.0" tx="-64.75" ty="69.75">
-            <y:Point x="511.7447200000006" y="560.1287199999995"/>
+            <y:Point x="695.7447200000006" y="565.1287199999995"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -329,14 +336,23 @@ which were processed successfully<y:PreferredPlacementDescriptor angle="0.0" ang
       </data>
     </edge>
     <edge id="e7" source="n9" target="n12">
-      <data key="d9"/>
       <data key="d10">
         <y:BezierEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
-            <y:Point x="541.7447200000006" y="481.1287199999995"/>
+            <y:Point x="725.7447200000006" y="486.1287199999995"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
+        </y:BezierEdge>
+      </data>
+    </edge>
+    <edge id="e8" source="n13" target="n3">
+      <data key="d9"/>
+      <data key="d10">
+        <y:BezierEdge>
+          <y:Path sx="0.0" sy="0.0" tx="-41.0" ty="-20.25"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="none"/>
         </y:BezierEdge>
       </data>
     </edge>

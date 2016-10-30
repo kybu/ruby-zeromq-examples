@@ -21,6 +21,8 @@ module ZeromqEx
         instances << [instance, id]
       end
 
+      # Simple spinning loop monitoring spawned instances.
+      # It starts instances which exited.
       loop do
         instances.map! do |x|
           i, id = x
