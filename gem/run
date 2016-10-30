@@ -1,0 +1,16 @@
+#!/bin/zsh
+
+set -e
+
+logger &
+extract &
+db_reader &
+
+stopAll() {
+  pGroup=`ps -o pgid= $$|awk '{print$1}'`
+  setsid pkill -g $pGroup
+  exit 0
+}
+trap "stopAll" SIGINT SIGTERM
+
+wait %1

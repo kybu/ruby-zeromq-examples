@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+require 'zeromq_example/import'
+
+Logger.run

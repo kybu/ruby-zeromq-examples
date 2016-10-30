@@ -1,0 +1,27 @@
+#!/usr/bin/env ruby
+require 'commander/import'
+require 'zeromq_example/import'
+
+program :version, ZeromqEx::VERSION
+program :description, 'Simple zeromq example'
+
+default_command :start
+
+command :start do |c|
+  c.option '--instances NUM', Integer, 'How many instances to run'
+  c.action do |args, options|
+    options.default instances: 4
+
+    DoExtractions.spawn options.instances
+  end
+end
+
+command :spawned do |c|
+  c.option '--id NUM', Integer, 'ID of this instance'
+  c.action do |args, options|
+    raise '--id parameter missing!' if options.id.nil?
+
+    DoExtractions.run options.id
+  end
+end
+
