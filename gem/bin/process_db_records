@@ -12,7 +12,7 @@ command :start do |c|
   c.action do |args, options|
     options.default instances: 4
 
-    DoExtractions.spawn options.instances
+    ProcessDBRecords.spawn options.instances
   end
 end
 
@@ -21,7 +21,7 @@ command :spawned do |c|
   c.action do |args, options|
     raise '--id parameter missing!' if options.id.nil?
 
-    DoExtractions.run options.id
+    ProcessDBRecords.run options.id
   end
 end
 

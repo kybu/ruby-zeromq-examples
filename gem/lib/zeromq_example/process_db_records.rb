@@ -4,16 +4,16 @@ require 'zeromq_example/defaults'
 require 'zeromq_example/logger'
 
 module ZeromqEx
-  class DoExtractions
+  class ProcessDBRecords
     extend  LoggerClient
     include LoggerClient
 
     def self.spawn(count)
-      initLogging 'Extractor main'
+      initLogging 'ProcessDBRecords main'
 
       instances = []
 
-      log "Going to spawn #{count} extractor instances."
+      log "Going to spawn #{count} instances."
 
       count.times do
         id = instances.size+1
@@ -25,7 +25,7 @@ module ZeromqEx
         instances.map! do |x|
           i, id = x
           if i.exited?
-            log "Extractor instance n.#{id} exited! Starting a new one."
+            log "ProcessDBRecords instance n.#{id} exited! Starting a new one."
 
             [self.spawnInstance(id), id]
           else
@@ -42,7 +42,7 @@ module ZeromqEx
         endPoint1 = Defaults::DBRECORDS_ENDPOINT,
         endPoint2 = Defaults::DBRECORDS_DONE_ENDPOINT)
 
-      initLogging "Extractor n.#{instanceID}"
+      initLogging "ProcessDBRecords n.#{instanceID}"
       self.new instanceID, endPoint1, endPoint2
     end
 
@@ -52,12 +52,12 @@ module ZeromqEx
       @sock = connect_socket endPoint1, ZMQ::PULL
       @sockRecordsDone = connect_socket endPoint2, ZMQ::PUSH
 
-      doExtractions
+      processDBRecords
     end
 
     private
 
-    def doExtractions
+    def processDBRecords
       log "Started"
 
       loop do
@@ -66,15 +66,15 @@ module ZeromqEx
 
         record = Marshal.load rawData
 
-        processDBRecord record
+        processOneRecord record
 
         # Send notification about processed DB record
-        @sockRecordsDone.send_string Marshal.dump({id: record.id, extractor: @instanceID})
+        @sockRecordsDone.send_string Marshal.dump({id: record.id, processDBRecords: @instanceID})
       end
     end
 
     # This method mocks processing received DB records
-    def processDBRecord(record)
+    def processOneRecord(record)
       outText = ''
       PP.pp(record, outText)
 

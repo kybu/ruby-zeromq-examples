@@ -49,4 +49,4 @@ end
 require 'zeromq_example/defaults'
 require 'zeromq_example/logger'
 require 'zeromq_example/db_reader'
-require 'zeromq_example/extract'
+require 'zeromq_example/process_db_records'

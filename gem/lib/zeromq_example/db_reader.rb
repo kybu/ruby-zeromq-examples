@@ -8,9 +8,7 @@ module ZeromqEx
     extend LoggerClient
     include LoggerClient
 
-    DBRecord = Struct.new(
-        "ExtractionData",
-        :id, :name, :birthNumber, :address, :images)
+    DBRecord = Struct.new(:id, :name, :birthNumber, :address, :images)
 
     def self.run(
         endPoint1 = Defaults::DBRECORDS_ENDPOINT,
@@ -26,12 +24,12 @@ module ZeromqEx
 
       @rnd = Random.new
 
-      pushExtractions
+      pushDBRecords
     end
 
     private
 
-    def pushExtractions
+    def pushDBRecords
       log "Started"
 
       dbRecords = 0
@@ -70,7 +68,7 @@ module ZeromqEx
       msg = ''
       while @sockRecordsDone.recv_string(msg, ZMQ::DONTWAIT) != -1
         notification = Marshal.load msg
-        log "DB record with ID #{notification[:id]} was processed by extractor n.#{notification[:extractorID]}"
+        log "DB record with ID #{notification[:id]} was processed by ProcessDBRecords n.#{notification[:processDBRecords]}"
       end
     end
   end
