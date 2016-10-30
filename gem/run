@@ -3,7 +3,7 @@
 set -e
 
 logger &
-extract &
+process_db_records &
 db_reader &
 
 stopAll() {

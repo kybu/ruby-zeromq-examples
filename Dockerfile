@@ -16,7 +16,7 @@ COPY ./ /root/zeromq-example
 COPY ./zlogin /root/.zlogin
 
 WORKDIR /root/zeromq-example/gem
-RUN rm Gemfile.lock && \
+RUN rm -f Gemfile.lock && \
     bundle install && gem build zeromq_example.gemspec && \
     gem install zeromq_example-*.gem
 
